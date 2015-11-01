@@ -1,7 +1,7 @@
 var testString = require('fs').readFileSync('data.json', 'UTF-8');
 
 testString = testString
-    .replace(/[^’{}:,\[\]"]/g, 1)
+    .replace(/[^’{}:,\[\]"]/g, 1) // Just making sure nothing but these characters exist
     // .replace(/’/g, 'abcd') // Uncomment this line to stop seeing the issue
     ;
 

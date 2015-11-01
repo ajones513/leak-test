@@ -2,7 +2,7 @@ var testString = require('fs').readFileSync('data.json', 'UTF-8');
 
 testString = testString
     .replace(/[^’{}:,\[\]"]/g, 1)
-    // .replace(/’/g, 11111) // Uncomment this line to stop seeing the issue
+    // .replace(/’/g, 'abcd') // Uncomment this line to stop seeing the issue
     ;
 
 var count = 0;

@@ -9,7 +9,7 @@ var count = 0;
 function doIt() {
     var x = JSON.parse(testString);
     global.gc();
-    console.log('Round', count);
+    console.log('Round', count, process.memoryUsage().heapUsed);
     count += 1;
     setTimeout(doIt);
 }

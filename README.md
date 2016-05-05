@@ -8,12 +8,12 @@ This repo highlights a possible memory leak in V8 when running JSON.parse() on l
 
 What Steps Will Reproduce the Problem?
 -----
-1) Clone https://github.com/ajones513/leak-test
-2) node --expose-gc --trace-gc --trace-gc-verbose index.js
-3) After 200 rounds the large object space is ~110 MB and continues to climb
-4) Uncomment line 5
-5) Run again using the same command
-6) The large object space remains stable at ~3 MB
+1. Clone https://github.com/ajones513/leak-test
+2. node --expose-gc --trace-gc --trace-gc-verbose index.js
+3. After 200 rounds the large object space is ~110 MB and continues to climb
+4. Uncomment line 5
+5. Run again using the same command
+6. The large object space remains stable at ~3 MB
 
 What is the Expected Output?
 -----
